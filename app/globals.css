@@ -1,0 +1,226 @@
+@import "tailwindcss";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * BetterFit landing — tokens derived from docs/brand-guideline-betterfit.md
+ * in the main repository. Light base, blue primary, lime as micro-accent.
+ */
+:root {
+  --radius: 0.875rem; /* 14px — card radius from the guideline */
+
+  --bf-primary-700: #0a4fd4;
+  --bf-primary-600: #1769ff;
+  --bf-primary-100: #e8f0ff;
+  --bf-energy-500: #b8f21d;
+  --bf-energy-100: #f2fbd2;
+
+  --bf-ink-900: #0c1424;
+  --bf-ink-700: #334155;
+  --bf-ink-500: #64748b;
+  --bf-bg-100: #f4f7fc;
+  --bf-surface-100: #ffffff;
+  --bf-border-300: #dce4f2;
+
+  --bf-success-600: #16a34a;
+  --bf-warning-600: #d97706;
+  --bf-error-600: #dc2626;
+  --bf-info-600: #0284c7;
+
+  --bf-shadow-card: 0 8px 24px rgba(12, 20, 36, 0.08);
+
+  /* shadcn mapping */
+  --background: var(--bf-bg-100);
+  --foreground: var(--bf-ink-900);
+  --card: var(--bf-surface-100);
+  --card-foreground: var(--bf-ink-900);
+  --popover: var(--bf-surface-100);
+  --popover-foreground: var(--bf-ink-900);
+  --primary: var(--bf-primary-600);
+  --primary-foreground: #ffffff;
+  --secondary: var(--bf-primary-100);
+  --secondary-foreground: var(--bf-primary-700);
+  --muted: #edf1f9;
+  --muted-foreground: var(--bf-ink-500);
+  --accent: var(--bf-primary-100);
+  --accent-foreground: var(--bf-primary-700);
+  --destructive: var(--bf-error-600);
+  --border: var(--bf-border-300);
+  --input: var(--bf-border-300);
+  --ring: var(--bf-primary-600);
+}
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* brand tokens */
+  --color-bf-blue-700: var(--bf-primary-700);
+  --color-bf-blue: var(--bf-primary-600);
+  --color-bf-blue-100: var(--bf-primary-100);
+  --color-bf-lime: var(--bf-energy-500);
+  --color-bf-lime-100: var(--bf-energy-100);
+  --color-bf-ink: var(--bf-ink-900);
+  --color-bf-ink-700: var(--bf-ink-700);
+  --color-bf-ink-500: var(--bf-ink-500);
+  --color-bf-bg: var(--bf-bg-100);
+  --color-bf-surface: var(--bf-surface-100);
+  --color-bf-border: var(--bf-border-300);
+  --color-bf-success: var(--bf-success-600);
+  --color-bf-warning: var(--bf-warning-600);
+  --color-bf-error: var(--bf-error-600);
+  --color-bf-info: var(--bf-info-600);
+}
+
+@layer base {
+  * {
+    border-color: var(--bf-border-300);
+  }
+
+  html {
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    color-scheme: light;
+    background: var(--bf-bg-100);
+    color: var(--bf-ink-900);
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--bf-primary-600) 22%, white);
+    color: var(--bf-ink-900);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+    letter-spacing: -0.025em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--bf-primary-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* Section label — mono, uppercase, understated */
+  .bf-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--bf-ink-500);
+  }
+
+  .bf-eyebrow::before {
+    content: "";
+    width: 1.5rem;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--bf-primary-600);
+  }
+
+  /* Card matching the product's surface language */
+  .bf-card {
+    background: var(--bf-surface-100);
+    border: 1px solid var(--bf-border-300);
+    border-radius: 14px;
+    box-shadow: var(--bf-shadow-card);
+  }
+
+  /* Status dot with pulse (used for honest status hints) */
+  .bf-pulse {
+    position: relative;
+  }
+
+  .bf-pulse::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: inherit;
+    animation: bf-ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+}
+
+@keyframes bf-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  75%,
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* ── Scroll reveals (CSS + IntersectionObserver) ─────────────
+   `.reveal-ready` is added from JS only when motion is allowed;
+   without JS (or with reduced motion) everything stays visible. */
+.reveal-ready :is([data-reveal], [data-hero]) {
+  opacity: 0;
+  translate: 0 20px;
+  transition:
+    opacity 0.55s ease,
+    translate 0.55s ease;
+}
+
+.reveal-ready :is([data-reveal], [data-hero]).is-revealed {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* hero entrance stagger (elements are above the fold, observer fires on load) */
+.reveal-ready [data-hero="badge"] { transition-delay: 0.05s; }
+.reveal-ready [data-hero="title"] { transition-delay: 0.14s; }
+.reveal-ready [data-hero="lead"] { transition-delay: 0.24s; }
+.reveal-ready [data-hero="cta"] { transition-delay: 0.32s; }
+.reveal-ready [data-hero="trust"] { transition-delay: 0.4s; }
+.reveal-ready [data-hero="product"] { transition-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bf-pulse::after {
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
