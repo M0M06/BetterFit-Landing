@@ -108,17 +108,17 @@ export function OpenSource() {
               </div>
             ))}
 
-            {/* licence status — honest */}
+            {/* licence — verifiable in the repo */}
             <div data-reveal className="flex gap-4 rounded-xl border border-white/12 bg-white/[0.04] p-4">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/[0.08] text-white/70">
                 <Scale className="size-4.5" />
               </span>
               <div>
-                <h3 className="text-[0.9rem] font-bold text-white">Licenza in definizione</h3>
+                <h3 className="text-[0.9rem] font-bold text-white">Licenza AGPL-3.0</h3>
                 <p className="mt-1 text-[0.84rem] leading-relaxed text-white/65">
-                  La licenza open source definitiva è in corso di scelta e sarà
-                  pubblicata nel repository. Fino ad allora, fai riferimento a
-                  quanto indicato su GitHub.
+                  Chi modifica BetterFit e lo espone a terzi — anche solo come
+                  SaaS — deve pubblicare le modifiche con la stessa licenza.
+                  Il codice resta aperto, anche in uso commerciale.
                 </p>
               </div>
             </div>

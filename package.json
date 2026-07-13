@@ -1,7 +1,13 @@
 {
-  "name": "landing",
+  "name": "betterfit-landing",
   "version": "0.1.0",
   "private": true,
+  "license": "AGPL-3.0-or-later",
+  "description": "Sito pubblico di BetterFit — gestionale open source per palestre e centri fitness",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M0M06/BetterFit-Landing"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

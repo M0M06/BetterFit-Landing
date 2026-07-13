@@ -64,6 +64,12 @@ Vedi [CONTRIBUTING.md](CONTRIBUTING.md). Bug e proposte passano dalle
 
 ## Licenza
 
-**Da definire.** La licenza open source del progetto BetterFit non è ancora stata
-scelta: verrà pubblicata nel repository principale e questa repository la adotterà
-di conseguenza. Fino ad allora tutti i diritti restano riservati agli autori.
+Questa repository è distribuita sotto la
+[GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0).
+
+In pratica: puoi usare, modificare e ridistribuire il codice liberamente, ma se
+lo modifichi e lo esponi a terzi (anche solo come SaaS) sei tenuto a pubblicare
+le tue modifiche con la stessa licenza. È una scelta pensata per mantenere
+BetterFit un progetto aperto anche in caso di uso commerciale.
+
+Copyright © 2026 M0M06 e i contributori di BetterFit.
