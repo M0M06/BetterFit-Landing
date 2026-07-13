@@ -129,7 +129,7 @@ export function OpenSource() {
           <Button asChild variant="outline" size="lg" className="border-white/20 bg-transparent text-white hover:border-bf-lime/60 hover:bg-white/[0.05] hover:text-white">
             <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
               <GitHubIcon className="size-4" />
-              github.com/GPOI-2526-5E/BetterFit
+              github.com/M0M06/Software-BetterFit
               <ArrowUpRight className="size-3.5" />
             </a>
           </Button>

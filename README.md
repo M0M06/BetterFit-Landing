@@ -1,9 +1,9 @@
 # BetterFit — Landing page
 
-Sito pubblico di [BetterFit](https://github.com/GPOI-2526-5E/BetterFit), il gestionale
+Sito pubblico di [BetterFit](https://github.com/M0M06/Software-BetterFit), il gestionale
 open source per palestre e centri fitness. Questa repository contiene **solo la landing
 page**; il prodotto (backend .NET + dashboard SvelteKit) vive nel
-[repository principale](https://github.com/GPOI-2526-5E/BetterFit).
+[repository principale](https://github.com/M0M06/Software-BetterFit).
 
 > **Stato del progetto:** in sviluppo attivo. Il prodotto non è ancora production-ready
 > ed è alla ricerca di palestre pilota. La landing riflette solo funzionalità
@@ -60,7 +60,7 @@ I colori, i raggi e le ombre derivano dalla brand guideline del prodotto
 ## Contribuire
 
 Vedi [CONTRIBUTING.md](CONTRIBUTING.md). Bug e proposte passano dalle
-[issue del progetto](https://github.com/GPOI-2526-5E/BetterFit/issues).
+[issue del progetto](https://github.com/M0M06/Software-BetterFit/issues).
 
 ## Licenza
 

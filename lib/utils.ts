@@ -7,8 +7,8 @@ export function cn(...inputs: ClassValue[]) {
 
 /* ── Real project links — update here in one place ────────── */
 
-export const GITHUB_URL = "https://github.com/GPOI-2526-5E/BetterFit";
-export const GITHUB_ISSUES_URL = "https://github.com/GPOI-2526-5E/BetterFit/issues";
+export const GITHUB_URL = "https://github.com/M0M06/Software-BetterFit";
+export const GITHUB_ISSUES_URL = "https://github.com/M0M06/Software-BetterFit/issues";
 
 /**
  * Pilot application channel: a prefilled GitHub issue — a real, public,

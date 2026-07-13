@@ -8,6 +8,6 @@ molestie, attacchi personali, linguaggio discriminatorio o comportamenti che
 rendano l'ambiente ostile.
 
 Le violazioni possono essere segnalate aprendo una issue nel
-[repository principale](https://github.com/GPOI-2526-5E/BetterFit/issues) o
+[repository principale](https://github.com/M0M06/Software-BetterFit/issues) o
 contattando direttamente i maintainer indicati su GitHub. Le segnalazioni
 vengono gestite con riservatezza.

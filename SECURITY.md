@@ -4,7 +4,7 @@
 
 Se trovi una vulnerabilità in questa landing o nel prodotto BetterFit, **non
 aprire una issue pubblica con i dettagli**. Usa invece la funzione
-[Report a vulnerability](https://github.com/GPOI-2526-5E/BetterFit/security)
+[Report a vulnerability](https://github.com/M0M06/Software-BetterFit/security)
 di GitHub sul repository principale, oppure contatta i maintainer indicati
 nella pagina dell'organizzazione.
 

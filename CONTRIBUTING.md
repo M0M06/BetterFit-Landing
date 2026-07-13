@@ -2,11 +2,11 @@
 
 Grazie dell'interesse! Questa repository contiene solo il sito pubblico; per
 contribuire al prodotto (backend e dashboard) fai riferimento al
-[repository principale](https://github.com/GPOI-2526-5E/BetterFit).
+[repository principale](https://github.com/M0M06/Software-BetterFit).
 
 ## Come proporre una modifica
 
-1. Apri una [issue](https://github.com/GPOI-2526-5E/BetterFit/issues) descrivendo
+1. Apri una [issue](https://github.com/M0M06/Software-BetterFit/issues) descrivendo
    il problema o la proposta, così evitiamo lavoro duplicato.
 2. Fai un fork e crea un branch descrittivo (`fix/contrasto-footer`,
    `feat/sezione-faq`, …).
