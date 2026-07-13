@@ -13,9 +13,8 @@ const mono = JetBrains_Mono({
   weight: ["400", "500", "600"],
 });
 
-// TODO(owner): set the production URL at deploy time so Open Graph images
-// resolve to absolute URLs (e.g. new URL("https://betterfit.example")).
 export const metadata: Metadata = {
+  metadataBase: new URL("https://better-fit-landing-eight.vercel.app"),
   title: "BetterFit — Gestionale open source per palestre",
   description:
     "Gestionale open source per palestre e centri fitness: utenti, abbonamenti, accessi, vendite, CRM, training e report in un unico sistema. In sviluppo attivo, in cerca di palestre pilota.",
