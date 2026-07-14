@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE = "https://better-fit-landing-eight.vercel.app";
+const SITE = "https://getbetterfit-m0m06s-projects.vercel.app";
 
 /**
  * Next.js genera automaticamente /sitemap.xml da questo file al build.
