@@ -14,7 +14,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://getbetterfit-m0m06s-projects.vercel.app"),
+  metadataBase: new URL("https://getbetterfit.vercel.app"),
   verification: {
     google: "h3z0_YoL6j7c5jnySkl0oEod6zByf0hNVhJXAaManRI",
   },

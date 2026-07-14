@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE = "https://getbetterfit-m0m06s-projects.vercel.app";
+const SITE = "https://getbetterfit.vercel.app";
 
 /**
  * Sitemap conforme allo standard. Il sito e' one-page, quindi elenchiamo

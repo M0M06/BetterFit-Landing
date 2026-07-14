@@ -7,7 +7,7 @@ import type { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: "*", allow: "/" }],
-    sitemap: "https://getbetterfit-m0m06s-projects.vercel.app/sitemap.xml",
-    host: "https://getbetterfit-m0m06s-projects.vercel.app",
+    sitemap: "https://getbetterfit.vercel.app/sitemap.xml",
+    host: "https://getbetterfit.vercel.app",
   };
 }
