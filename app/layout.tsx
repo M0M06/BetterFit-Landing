@@ -15,6 +15,9 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://getbetterfit-m0m06s-projects.vercel.app"),
+  verification: {
+    google: "h3z0_YoL6j7c5jnySkl0oEod6",
+  },
   title: "BetterFit — Gestionale open source per palestre",
   description:
     "Gestionale open source per palestre e centri fitness: utenti, abbonamenti, accessi, vendite, CRM, training e report in un unico sistema. In sviluppo attivo, in cerca di palestre pilota.",
